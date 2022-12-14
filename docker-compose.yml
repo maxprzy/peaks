@@ -18,7 +18,7 @@ services:
         - ./peaks:/code
       ports:
         - "8000:8000"
-      environment
+      environment:
         - DB_HOST=db
         - DB_name=peaks
         - DB_USER=postgres
