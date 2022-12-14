@@ -45,14 +45,14 @@ class PeaksDestroyAPIView(generics.DestroyAPIView):
 
 @api_view(['POST'])
 def get_precise_list(request):
-    tleftx = int(request.data["tleft"].split(":")[0])
-    trightx = int(request.data["tright"].split(":")[0])
-    bleftx = int(request.data["bleft"].split(":")[0])
-    brightx = int(request.data["bright"].split(":")[0])
-    tlefty = int(request.data["tleft"].split(":")[1])
-    trighty = int(request.data["tright"].split(":")[1])
-    blefty = int(request.data["bleft"].split(":")[1])
-    brighty = int(request.data["bright"].split(":")[1])
+    tleftx = float(request.data["tleft"].split(":")[0])
+    trightx = float(request.data["tright"].split(":")[0])
+    bleftx = float(request.data["bleft"].split(":")[0])
+    brightx = float(request.data["bright"].split(":")[0])
+    tlefty = float(request.data["tleft"].split(":")[1])
+    trighty = float(request.data["tright"].split(":")[1])
+    blefty = float(request.data["bleft"].split(":")[1])
+    brighty = float(request.data["bright"].split(":")[1])
     qs = []
 
     polygon = Polygon([(tleftx, tlefty), (trightx, trighty), (brightx, brighty), (bleftx, blefty)])
