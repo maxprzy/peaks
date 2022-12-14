@@ -7,5 +7,4 @@ RUN pip install -r requirements.txt
 COPY ./peaks /code/
 RUN apt-get update -y \
     && apt-get -y install libpq-dev python3-dev postgresql-client \
-    postgresql-server-dev-all
-
+    postgresql-server-dev-all musl-dev zlib1g zlib1g-dev

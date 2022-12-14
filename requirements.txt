@@ -1,3 +1,5 @@
 django
 djangorestframework
 shapely
+psycopg2
+psycopg2-binary
